@@ -47,7 +47,7 @@ app.post('/api/shorturl', function (req, res) {
       addURL(req.body.url);
       res.json(stored_url[lastShortID]);
     }else{
-      res.json({ error: 'invalid url' });
+      res.json({ error: 'Invalid URL' });
     }
   });
 });
